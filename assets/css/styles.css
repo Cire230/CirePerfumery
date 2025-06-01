@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600&family=Raleway:wght@300;400;500&display=swap');
+
+body {
+    font-family: 'Raleway', sans-serif;
+    color: #333;
+    scroll-behavior: smooth;
+}
+
+.hero-text {
+    font-family: 'Playfair Display', serif;
+}
+
+.product-card {
+    transition: all 0.3s ease;
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+}
+
+.product-image {
+    transition: transform 0.5s ease;
+}
+
+.product-card:hover .product-image {
+    transform: scale(1.03);
+}
+
+.fade-in {
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+.rotating-banner {
+    animation: slideText 15s infinite;
+}
+
+@keyframes slideText {
+    0%, 33% { transform: translateY(0); }
+    36%, 66% { transform: translateY(-100%); }
+    69%, 100% { transform: translateY(-200%); }
+}
+
+.newsletter-input {
+    border-bottom: 1px solid #000;
+    transition: all 0.3s ease;
+}
+
+.newsletter-input:focus {
+    border-bottom: 1px solid #555;
+    outline: none;
+}
